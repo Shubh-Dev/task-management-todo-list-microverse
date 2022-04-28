@@ -1,3 +1,49 @@
-.hello {
-  color: red;
+* {
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: aquamarine;
+}
+
+.container {
+  width: 45%;
+  margin: 15vh auto auto auto;
+  border: 2px solid black;
+  background-color: #fff;
+}
+
+.headline {
+  border-bottom: 1px solid grey;
+  padding-left: 10px;
+  font-size: 21px;
+}
+
+#input {
+  border: none;
+  font-size: 18px;
+  padding: 15px 0 10px 10px;
+  outline: none;
+}
+
+.text-input {
+  border-bottom: 1px solid grey;
+  min-height: 60px;
+}
+
+.clear-button p {
+  text-align: center;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.inner-div {
+  border-bottom: 1px solid grey;
+  min-height: 60px;
+  padding-left: 10px;
+  padding-top: 13px;
 }

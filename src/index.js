@@ -1,11 +1,20 @@
 import _ from 'lodash';
 import './style.css';
+import setItemToLocalStorage from './modules/setLocalStorage.js';
+// import Icon from './refresh.svg';
 
-function component() {
-  const element = document.createElement('div');
-  // Lodash, now imported by this script
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
-  return element;
-}
-document.body.appendChild(component());
+// const myIcon = new Image();
+// myIcon.src = Icon;
+
+// const headLine = document.querySelector('.headline');
+// headLine.appendChild(Icon);
+
+const dynamicList = document.querySelector('.dynamic-list');
+const inputFieldValue = document.querySelector('#input');
+const onlyForm = document.querySelector('.only-form');
+onlyForm.addEventListener('submit', (e) => {
+    setItemToLocalStorage(inputFieldValue.value);
+    // dynamicList.innerHTML += `<div class="inner-div"><input type="checkbox">${inputFieldValue.value}</div>`
+    e.preventDefault();
+    // inputFieldValue.value = '';
+});
