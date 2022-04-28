@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import './style.css';
 import setItemToLocalStorage from './modules/setLocalStorage.js';
+import getItemFromLocalStorage from './modules/getItemFromLocalStorage.js';
 // import Icon from './refresh.svg';
 
 // const myIcon = new Image();
@@ -8,6 +9,8 @@ import setItemToLocalStorage from './modules/setLocalStorage.js';
 
 // const headLine = document.querySelector('.headline');
 // headLine.appendChild(Icon);
+
+getItemFromLocalStorage();
 
 const dynamicList = document.querySelector('.dynamic-list');
 const inputFieldValue = document.querySelector('#input');
